@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-image = 'test.jpg'
+image = 'flower.jpg'
 im = Image.open(image)
 pic = im.load()
 # print(range(im.size[1]))
@@ -140,7 +140,7 @@ def output(num, inp):
         print(line)
         line = 'strip.setPixelColor({}, {}, {}, {});'.format(front['d'], temp[front['d']][front['num']][0], temp[front['d']][front['num']][1], temp[front['d']][front['num']][2])
         print(line)
-        
+
         print('strip.show();')
         print('delay(111);')
         return 1
